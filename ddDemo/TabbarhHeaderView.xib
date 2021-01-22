@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="TabbarhHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iji-or-7Qf">
+                    <rect key="frame" x="125" y="23.5" width="70" height="3"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="FKw-yN-Nzd"/>
+                        <constraint firstAttribute="height" constant="3" id="IFM-oD-r8I"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmg-NH-HLw">
+                    <rect key="frame" x="60" y="24.5" width="200" height="1"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="MDL-mG-Eif"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="9Gg-ye-v9C"/>
+            <constraints>
+                <constraint firstItem="Iji-or-7Qf" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="7jp-9K-hTr"/>
+                <constraint firstAttribute="trailing" secondItem="Jmg-NH-HLw" secondAttribute="trailing" constant="60" id="GA6-WV-ukW"/>
+                <constraint firstItem="Iji-or-7Qf" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="bfu-ga-IE6"/>
+                <constraint firstItem="Jmg-NH-HLw" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="60" id="kXW-T0-Z1u"/>
+                <constraint firstItem="Jmg-NH-HLw" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="uEE-d2-Aza"/>
+            </constraints>
+            <connections>
+                <outlet property="firstLine" destination="Iji-or-7Qf" id="MdL-mm-8Z3"/>
+                <outlet property="secondLine" destination="Jmg-NH-HLw" id="Kf6-B8-kvZ"/>
+            </connections>
+            <point key="canvasLocation" x="141" y="102"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
